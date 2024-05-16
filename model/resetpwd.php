@@ -91,7 +91,7 @@
          
           $sql = "UPDATE user SET Password = '$newPassword' WHERE Email = '$email'";
       
-          // Execute SQL statement
+          
           if ($conn->query($sql) === TRUE) {
               echo '<script>alert("Password updated successfully");
               window.location.href = "../view/dashbord.html";

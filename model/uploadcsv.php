@@ -41,34 +41,34 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     echo "<h3>File: {$uploadedFiles['name'][$i]}</h3>";
 
                     while (($data = fgetcsv($csvFile)) !== false) {
-                        // Process each NIC number from the CSV file
+                        
                         $nicNumber = $data[$idNumIndex];
 
-                        // NIC processing logic goes here
+                        // NIC processing logic 
                         if (!empty($nicNumber)) {
-                           // $birthYear = $gender;
+                           
 
-                            // Determine the format and process accordingly
+                            
                             if (strlen($nicNumber) == 10) {
-                                // Old NIC format
+                                // Old NIC 
                                 $birthYear = '19'.substr($nicNumber, 0, 2);
                                 $daysFromYearStart = intval(substr($nicNumber, 2, 3));
                                 $x=intval(substr($nicNumber, 2, 3));
                                
                             } elseif (strlen($nicNumber) == 12) {
-                                // New NIC format
+                                // New NIC 
                                 $birthYear = substr($nicNumber, 0, 4);
                                 $daysFromYearStart = intval(substr($nicNumber, 4, 3));
                                 $x=intval(substr($nicNumber, 4, 3));
                             } else {
                                 echo "Invalid NIC Number: {$nicNumber}<br>";
-                                continue; // Skip to the next iteration
+                                continue;
                             }
 
                             $gender = $daysFromYearStart > 500 ? "Female" : "Male";
                             $daysFromYearStart = $daysFromYearStart > 500 ? $daysFromYearStart - 500 : $daysFromYearStart;
 
-                            // Calculate the birthday from the daysFromYearStart
+                            // Calculate the birthday 
                             if((($birthYear%4==0 && $birthYear%100 != 0)|| $birthYear%400 == 0)){
                                 $birthday = DateTime::createFromFormat('Y z', $birthYear . ' ' . ($daysFromYearStart - 1));
 
