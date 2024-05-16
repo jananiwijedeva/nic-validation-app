@@ -40,14 +40,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         echo '<script>
         alert("Login Successful!");
-        window.location.href = "dashbord.html";
+        window.location.href = "../view/dashbord.html";
       </script>';
      
     } else {
         
         echo '<script>
         alert("Incorrect Email or Password. .");
-        window.location.href = "home.html";
+        window.location.href = "../home.html";
       </script>';
     }
 }

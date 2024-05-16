@@ -31,7 +31,7 @@ $sql = "INSERT INTO  user (FirstName, LastName, Email, Password) VALUES ('$fname
 if ($conn->query($sql) === TRUE) {
  echo '<script>
   alert("Login successful!");
-  window.location.href = "dashbord.html";
+  window.location.href = "../view/dashbord.html";
 </script>';
   } else {
     echo "Error: " . $sql . "<br>" . $conn->error;

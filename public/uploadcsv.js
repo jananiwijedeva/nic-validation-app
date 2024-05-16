@@ -1,6 +1,6 @@
 document.getElementById("btnback").addEventListener("click", function() {
         
-    window.location.href = "dashbord.html";
+    window.location.href = "../view/dashbord.html";
 });
 function displayFileDetails() {
     const fileInput = document.getElementById('csvFiles');

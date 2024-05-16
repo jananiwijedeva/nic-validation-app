@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSV File Upload</title>
-    <link rel="icon" href="favicon.ico">
-    <link rel="stylesheet" href="uploadcsv.css">
+    <link rel="icon" href="../public/favicon.ico">
+    <link rel="stylesheet" href="../public/uploadcsv.css">
 </head>
 <body>
     <div id="main">
@@ -145,6 +145,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 }
 ?>
 
-<script src="uploadcsv.js"></script>
+<script src="../public/uploadcsv.js"></script>
 </body>
 </html>

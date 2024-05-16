@@ -5,7 +5,7 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Reset</title>
-   <link rel="icon" href="favicon.ico">
+   <link rel="icon" href="../public/favicon.ico">
    <style>
       body{
          margin: 0;
@@ -94,11 +94,11 @@
           // Execute SQL statement
           if ($conn->query($sql) === TRUE) {
               echo '<script>alert("Password updated successfully");
-              window.location.href = "dashbord.html";
+              window.location.href = "../view/dashbord.html";
                </script>';
           } else {
               echo '<script>alert("Error updating password: ");
-              window.location.href = "dashbord.html";
+              window.location.href = "../view/dashbord.html";
                </script>' . $conn->error;
           }
       

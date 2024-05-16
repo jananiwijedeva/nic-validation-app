@@ -72,8 +72,8 @@ if (isset($_GET['type'])) {
 
 <head>
     <title>Details</title>
-    <link rel="icon" href="favicon.ico">
-    <link rel="stylesheet" href="details.css">
+    <link rel="icon" href="../public/favicon.ico">
+    <link rel="stylesheet" href="../public/details.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
 
 </head>
@@ -107,7 +107,7 @@ if (isset($_GET['type'])) {
         <script>
             //re-derict back button
             document.getElementById("btnback").addEventListener("click", function () {
-                window.location.href = "dashbord.html";
+                window.location.href = "../view/dashbord.html";
             });
 
 
