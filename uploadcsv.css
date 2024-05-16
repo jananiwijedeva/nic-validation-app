@@ -1,0 +1,170 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color:rgb(250, 250, 250);
+    text-align: center;
+}
+#main{
+    background-color: #928351;
+    height: 350px;
+    top: 200px;
+    left: 500px;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: 120px;
+}
+#div1{
+    font-size: 200%;
+    margin-bottom:20px;
+    margin-top:120px;
+    color: #ccc;
+    width: auto;
+    height: 100px;
+    padding:20px;
+    
+    
+}
+h1{
+    margin-top:10px;
+    color:#291010;
+}
+
+h2 {
+    color: #333;
+    font-size: 2em;
+    margin-top:40px;
+   
+}
+
+#uploadForm {
+    margin-bottom: 20px;
+    gap: 20px;
+
+}
+
+input[type="file"] {
+    display: none;
+}
+
+label {
+    background-color: #58b65d;
+    color: #fff;
+    padding: 15px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+label:hover {
+    background-color: #6ca05f;
+}
+#sbbtn{
+    background-color: #5e4516;
+    margin-top: 20px;
+    color: white;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    
+}
+#sbbtn:hover{
+    background-color:#3d3a2f;
+    
+}
+
+
+#fileList {
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+#fileList li {
+    margin-bottom: 5px;
+}
+#btnback{
+    position: fixed;
+    top: 20px;
+    left: 10px;
+    background-color: #3a793d; 
+    color: aliceblue; 
+    padding: 10px 40px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+          
+}
+#btnback:hover {
+  background-color: #000000;
+}
+
+/* For small screens (phones, less than 600px) */
+@media only screen and (max-width: 600px) {
+    h1 {
+        font-size: 25px;
+    }
+
+    #d1 {
+        width: 90%;
+        height: auto;
+    }
+
+    #tb {
+        width: 90%;
+    }
+
+    #btnback {
+        padding: 8px 30px;
+        font-size: 14px;
+    }
+}
+
+/* For medium screens (tablets, 600px to 900px) */
+@media only screen and (min-width: 600px) and (max-width: 900px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    #d1 {
+        width: 80%;
+        height: auto;
+    }
+
+    #tb {
+        width: 80%;
+    }
+
+    #btnback {
+        padding: 9px 35px;
+        font-size: 15px;
+    }
+}
+
+/* For large screens (desktops, more than 900px) */
+@media only screen and (min-width: 900px) {
+    h1 {
+        font-size: 35px;
+    }
+
+    #d1 {
+        width: 600px;
+        height: 500px;
+    }
+
+    #tb {
+        width: 50%;
+    }
+
+    #btnback {
+        padding: 10px 40px;
+        font-size: 16px;
+    }
+}

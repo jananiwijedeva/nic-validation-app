@@ -1,1 +1,1 @@
-# nic-validation-app
+# nic-validation-application

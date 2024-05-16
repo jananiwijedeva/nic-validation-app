@@ -1,0 +1,157 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #291010;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    
+   
+}
+#div1 {
+    text-align: center;
+    margin: 20 0 20 0;
+}
+
+#h1 {
+    color: aliceblue; 
+    text-align: center; 
+    margin-bottom: 20px; 
+    font-size: 50px; 
+}
+
+#div2 {
+    background-color: rgb(252, 241, 236);
+    border-radius: 10px;
+    margin-top: 30px;
+    box-shadow: 0 0 15px #a05353;
+    padding: 25px;
+    height: 320px;
+    width: 400px;
+    text-align: left;
+
+    
+}
+
+
+h2 {
+    color:   #8f391f;
+    font-size: 170%;
+    text-align: center;
+}
+
+#login {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid  #833000;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 15px;
+}
+
+#form-btn {
+    background-color: #3a793d;
+    color: aliceblue;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+#form-btn:hover {
+    background-color: #284226;
+}
+
+p {
+    color: red;
+    margin-top: 10px;
+    margin-left: 50px;
+   
+}
+#reg{
+    color: aliceblue;
+}
+#fogotpw{
+    margin: 0%;
+  
+
+}
+#fpw{
+    color: #2a60c4;
+
+}
+
+/* For small screens (phones, less than 600px) */
+@media only screen and (max-width: 600px) {
+    h1 {
+        font-size: 25px;
+    }
+
+    #d1 {
+        width: 90%;
+        height: auto;
+    }
+
+    #tb {
+        width: 90%;
+    }
+
+    #btnback {
+        padding: 8px 30px;
+        font-size: 14px;
+    }
+}
+
+/* For medium screens (tablets, 600px to 900px) */
+@media only screen and (min-width: 600px) and (max-width: 900px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    #d1 {
+        width: 80%;
+        height: auto;
+    }
+
+    #tb {
+        width: 80%;
+    }
+
+    #btnback {
+        padding: 9px 35px;
+        font-size: 15px;
+    }
+}
+
+/* For large screens (desktops, more than 900px) */
+@media only screen and (min-width: 900px) {
+    h1 {
+        font-size: 35px;
+    }
+
+    #d1 {
+        width: 600px;
+        height: 500px;
+    }
+
+    #tb {
+        width: 50%;
+    }
+
+    #btnback {
+        padding: 10px 40px;
+        font-size: 16px;
+    }
+}

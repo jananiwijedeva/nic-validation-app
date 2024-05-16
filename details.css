@@ -1,0 +1,155 @@
+body {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    background-color: #291010;
+
+}
+hr {
+    border: none;          
+    height: 5px;          
+    background-color: #4d0404; 
+    width: 80%;            
+    margin: 20px auto;     
+}
+h1 {
+    color: whitesmoke;
+    font-size: 35px;
+}
+
+#tb{
+    border-collapse: collapse;
+    width: 50%;
+    margin: 20px auto;
+    padding: 5px;
+}
+
+td {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+    background-color: rgb(214, 171, 115);
+    font-weight: bold;
+}
+
+th {
+    background-color: #141a25;
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 15px;
+    color: #dddddd;
+}
+
+#d1 {
+    text-align: center;
+    background-color: rgb(252, 241, 236);
+    border-radius: 10px;
+    box-shadow: 0 0 15px #a05353;
+    padding: 10px;
+    width: 600px;
+    height: 500px;
+}
+
+
+#ageChart {
+    margin-top: 50px;
+}
+
+
+
+#btn {
+    background-color: #0f3a2c;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+#anc {
+    color: white;
+}
+
+#butn {
+    align-items: center;
+}
+
+#btnback {
+    position: fixed;
+    top: 20px;
+    left: 10px;
+    background-color: #3a793d; 
+    color: aliceblue; 
+    padding: 10px 40px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#btnback:hover {
+    background-color: #09160b;
+}
+
+/* For small screens (phones, less than 600px) */
+@media only screen and (max-width: 600px) {
+    h1 {
+        font-size: 25px;
+    }
+
+    #d1 {
+        width: 90%;
+        height: auto;
+    }
+
+    #tb {
+        width: 90%;
+    }
+
+    #btnback {
+        padding: 8px 30px;
+        font-size: 14px;
+    }
+}
+
+/* For medium screens (tablets, 600px to 900px) */
+@media only screen and (min-width: 600px) and (max-width: 900px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    #d1 {
+        width: 80%;
+        height: auto;
+    }
+
+    #tb {
+        width: 80%;
+    }
+
+    #btnback {
+        padding: 9px 35px;
+        font-size: 15px;
+    }
+}
+
+/* For large screens (desktops, more than 900px) */
+@media only screen and (min-width: 900px) {
+    h1 {
+        font-size: 35px;
+    }
+
+    #d1 {
+        width: 600px;
+        height: 500px;
+    }
+
+    #tb {
+        width: 50%;
+    }
+
+    #btnback {
+        padding: 10px 40px;
+        font-size: 16px;
+    }
+}

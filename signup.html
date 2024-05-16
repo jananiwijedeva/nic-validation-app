@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="signup.css">
+    <link rel="icon" href="favicon.ico">
+    <title>Register Page</title>
+    
+</head>
+<body>
+    <div id="div1">
+        <h1 id="h1">
+            NIC Validating Application
+        </h1>
+    </div>
+    <div id="div2">
+        <h2>SIGNUP</h2>
+        <form id="signup" action="signup.php" method="post" onsubmit="return validateForm()" >
+            
+            <input type="text" id="fname" name="fname" placeholder="First Name" title="Enter Your First Name Here"  required>
+            
+            <input type="text" id="lname" name="lname" placeholder="Last Name" title="Enter Your Last Name Here"  required>
+            
+            <input type="email" id="email" name="email" placeholder="Email" title="Enter Your Email Here" required>
+            
+            <input type="password" id="password" name="password"  placeholder="Password" title="Create Your Own Password"  required>
+           
+            <button id="signbtn" type="submit" value="submit" >Sign Up</button>
+            <p id="emailMessage"></p>
+            <p id="passwordMessage"></p> 
+           
+
+        </form>
+       
+    </div>
+    <script src="signup.js"></script>
+    
+</body>
+</html>

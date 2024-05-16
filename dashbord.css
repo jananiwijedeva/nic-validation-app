@@ -1,0 +1,167 @@
+body {
+            
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    background-color: rgb(252, 241, 236);
+    
+    
+}
+
+.container {
+    align-items: center;
+    margin-left: 100px;
+    width: 400px;
+    height: 200px;
+    display: inline-block;
+    margin: 20px;
+    margin-top: -150px;
+    padding: 20px;
+    background: whitesmoke;
+    border: 1px solid #272264;
+    border-radius: 10px;
+    text-align:center;
+}
+
+.container:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s;
+    background-color:#fff;
+}
+
+.container a {
+    text-decoration: none;
+    color: #272264;
+    padding-top: 20px;
+    align-items: center;
+}
+
+body > a:nth-child(11) > div > div > h2{
+
+    align-items: center;
+    margin-top: 80px;
+}
+
+body > a:nth-child(12) > div > div > h2{
+
+    align-items: center;
+    margin-top: 80px;
+}
+
+
+
+
+
+
+h1 {
+    margin-top: 200px;
+    text-align: center;
+    color: #291010;
+    font-size: 60px;
+}
+
+h2{
+    color: #272264;
+}
+
+.navbar {
+    background-color: #291010;
+    height: 100px;
+    width: auto;
+    overflow: auto;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    margin-top: 20px;
+    font-size: large;
+    
+}
+
+
+.navbar a:hover {
+    background-color:#245bc1;
+    color: #fff;
+}
+.container-group {
+    text-align: center;
+}
+
+body > a:nth-child(12) > div{
+
+    margin-left: 200px;
+    margin-bottom: 200px;
+}
+
+body > a:nth-child(11) > div{
+
+    margin-left: 100px;
+}
+
+
+/* For small screens (phones, less than 600px) */
+@media only screen and (max-width: 600px) {
+    h1 {
+        font-size: 25px;
+    }
+
+    #d1 {
+        width: 90%;
+        height: auto;
+    }
+
+    #tb {
+        width: 90%;
+    }
+
+    #btnback {
+        padding: 8px 30px;
+        font-size: 14px;
+    }
+}
+
+/* For medium screens (tablets, 600px to 900px) */
+@media only screen and (min-width: 600px) and (max-width: 900px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    #d1 {
+        width: 80%;
+        height: auto;
+    }
+
+    #tb {
+        width: 80%;
+    }
+
+    #btnback {
+        padding: 9px 35px;
+        font-size: 15px;
+    }
+}
+
+/* For large screens (desktops, more than 900px) */
+@media only screen and (min-width: 900px) {
+    h1 {
+        font-size: 35px;
+    }
+
+    #d1 {
+        width: 600px;
+        height: 500px;
+    }
+
+    #tb {
+        width: 50%;
+    }
+
+    #btnback {
+        padding: 10px 40px;
+        font-size: 16px;
+    }
+}
