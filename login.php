@@ -39,14 +39,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $_SESSION['loggedin'] = true;
 
         echo '<script>
-        alert("Login successful!");
+        alert("Login Successful!");
         window.location.href = "dashbord.html";
       </script>';
      
     } else {
         
         echo '<script>
-        alert("Incorrect email or password. .");
+        alert("Incorrect Email or Password. .");
         window.location.href = "home.html";
       </script>';
     }
