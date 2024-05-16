@@ -11,7 +11,7 @@ function validateForm() {
         emailMessage.innerHTML = 'Email is valid.';
         emailMessage.style.color = 'green';
     } else {
-        emailMessage.innerHTML = 'Email is not valid. Please include "@" symbol or check if the email ends with "gmail.com".';
+        emailMessage.innerHTML = 'Email is not valid.".';
         emailMessage.style.color = 'red';
         return false; // Stop form submission  email is not valid
     }
