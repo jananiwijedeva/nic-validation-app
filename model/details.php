@@ -105,7 +105,7 @@ if (isset($_GET['type'])) {
 
         </div>
         <script>
-            //re-derict back button
+            
             document.getElementById("btnback").addEventListener("click", function () {
                 window.location.href = "../view/dashbord.html";
             });

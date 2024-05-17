@@ -46,9 +46,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
                         // NIC processing logic 
                         if (!empty($nicNumber)) {
-                           
-
-                            
+    
                             if (strlen($nicNumber) == 10) {
                                 // Old NIC 
                                 $birthYear = '19'.substr($nicNumber, 0, 2);
@@ -61,7 +59,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                                 $daysFromYearStart = intval(substr($nicNumber, 4, 3));
                                 $x=intval(substr($nicNumber, 4, 3));
                             } else {
-                                echo "Invalid NIC Number: {$nicNumber}<br>";
+                                echo "<strong><em>Invalid NIC Number:</strong></em> {$nicNumber}<br>";
                                 continue;
                             }
 
@@ -91,9 +89,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                                 $birthday = DateTime::createFromFormat('Y z', $birthYear . ' ' . ($daysFromYearStart - 1));
 
                             }
-                           
-                            
-
+              
                             $currentYear = date("Y");
                             $age = $currentYear - $birthYear;
 
@@ -116,9 +112,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
                             $sql = "INSERT INTO details (NIC, Birthday, Age, Gender) VALUES ('$nicNumber', '" . $birthday->format('Y-m-d') . "', '$age', '$gender')";
 
-
-
-
                             if ($conn->query($sql) === TRUE) {
                                echo "<br>";
                              } else {
@@ -126,12 +119,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                                 }
   
                             $conn->close();
-
-                            
+   
                         }
                     }
                 } else {
-                    echo "Column 'ID_num' not found in the CSV file: {$uploadedFiles['name'][$i]}<br>";
+                    echo "Column 'ID_num' not found: {$uploadedFiles['name'][$i]}<br>";
                 }
 
                 fclose($csvFile);
